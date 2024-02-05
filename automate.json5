@@ -17,8 +17,8 @@
           "actionDelay": 300,
           "desc": "自动进入拍照朗读, 偷懒用, 日常可以关闭",
           "rules": [
-            { "matches": "[vid=\\\"ll_photo_read\\\"]" },
-            { "matches": "[text=\\\"拍照朗读\\\"]" }
+            { "matches": "[vid=\"ll_photo_read\"]" },
+            { "matches": "[text=\"拍照朗读\"]" }
           ]
         },
         {
@@ -26,7 +26,7 @@
           "activityIds": ["com.iflytek.readassistant.biz.home.main.Home"],
           "actionMaximum": 1,
           "actionDelay": 300,
-          "rules": [{ "matches": "[text=\\\"确定\\\"]" }]
+          "rules": [{ "matches": "[text=\"确定\"]" }]
         },
         {
           "name": "拍照-自动确认照片",
@@ -34,7 +34,7 @@
           "activityIds": [
             "com.iflytek.readassistant.biz.ocr.ui.camera.OCRPicModifyActivity"
           ],
-          "rules": [{ "matches": "[vid=\\\"confirm_button\\\"]" }]
+          "rules": [{ "matches": "[vid=\"confirm_button\"]" }]
         },
         {
           "name": "拍照-自动加入收藏",
@@ -44,7 +44,7 @@
           "activityIds": [
             "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity"
           ],
-          "rules": [{ "matches": "[text=\\\"加入收藏\\\"]" }]
+          "rules": [{ "matches": "[text=\"加入收藏\"]" }]
         },
         {
           "name": "拍照-自动点击一键收听",
@@ -53,7 +53,7 @@
           "activityIds": [
             "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity"
           ],
-          "rules": [{ "matches": "[text=\\\"一键收听\\\"]" }]
+          "rules": [{ "matches": "[text=\"一键收听\"]" }]
         }
       ]
     },
@@ -67,8 +67,8 @@
           "actionDelay": 300,
           "activityIds": ["com.microsoft.xbox.MainActivity"],
           "rules": [
-            { "matches": "[text=\\\"在此设备上进行远程游戏\\\"]" },
-            { "matches": "[text=\\\"继续\\\"]" }
+            { "matches": "[text=\"在此设备上进行远程游戏\"]" },
+            { "matches": "[text=\"继续\"]" }
           ]
         }
       ]

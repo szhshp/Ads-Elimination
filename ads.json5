@@ -8,22 +8,12 @@
       "name": "新浪邮箱",
       "groups": [
         {
-          "name": "自动跳过升级",
-          "actionDelay": 300,
-          "rules": [{ "matches": "[text=\\\"下次再说\\\"]" }]
-        }
-      ]
-    },
-    {
-      "id": "com.sina.mail.free",
-      "name": "新浪邮箱",
-      "groups": [
-        {
           "name": "新浪邮箱-首屏广告",
           "actionDelay": 300,
           "activityIds": ["com.sina.mail.controller.FreeEntryActivity"],
           "rules": [
             { "matches": "[_id=31]" },
+            { "matches": "[text=\"下次再说\"]" }
           ]
         }
       ]
