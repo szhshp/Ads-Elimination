@@ -21,6 +21,18 @@
             { "matches": "[text=\"拍照朗读\"]" }
           ]
         },
+   {
+          "name": "自动确认退出朗读",
+          "activityIds": [
+              "com.iflytek.readassistant:id/news_dialog_btn_confirm"
+          ],
+          "actionMaximum": 1,
+          "actionDelay": 300,
+          "desc": "自动退出朗读, 偷懒用, 日常可以关闭",
+          "rules": [
+            { "matches": "[text=\"确定\"]" }
+          ]
+        },
         {
           "name": "自动确认键",
           "activityIds": ["com.iflytek.readassistant.biz.home.main.Home"],
