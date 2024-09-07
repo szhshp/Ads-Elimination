@@ -1,89 +1,78 @@
 {
-  "id": 100,
-  "name": "自动化",
-  "version": 3,
-  "apps": [
+  id: 100,
+  name: "自动化",
+  version: 3,
+  apps: [
     {
-      "id": "com.iflytek.readassistant",
-      "name": "讯飞有声",
-      "groups": [
+      id: "com.iflytek.readassistant",
+      name: "讯飞有声",
+      groups: [
         {
-          "name": "自动进入拍照朗读",
-          "activityIds": [
+          name: "自动进入拍照朗读",
+          activityIds: [
             "com.iflytek.readassistant.biz.settings.OtherSetActivity",
-            "com.iflytek.readassistant.biz.home.main.Home"
+            "com.iflytek.readassistant.biz.home.main.Home",
           ],
-          "actionMaximum": 1,
-          "actionDelay": 300,
-          "desc": "自动进入拍照朗读, 偷懒用, 日常可以关闭",
-          "rules": [
-            { "matches": "[vid=\"ll_photo_read\"]" },
-            { "matches": "[text=\"拍照朗读\"]" }
-          ]
-        },
-   {
-          "name": "自动确认退出朗读",
-          "activityIds": [
-              "com.iflytek.readassistant:id/news_dialog_btn_confirm"
+          actionMaximum: 1,
+          actionDelay: 300,
+          desc: "自动进入拍照朗读, 偷懒用, 日常可以关闭",
+          rules: [
+            { matches: '[vid="ll_photo_read"]' },
+            { matches: '[text="拍照朗读"]' },
           ],
-          "actionMaximum": 1,
-          "actionDelay": 300,
-          "desc": "自动退出朗读, 偷懒用, 日常可以关闭",
-          "rules": [
-            { "matches": "[text=\"确定\"]" }
-          ]
         },
         {
-          "name": "自动确认键",
-          "activityIds": ["com.iflytek.readassistant.biz.home.main.Home"],
-          "actionMaximum": 1,
-          "actionDelay": 300,
-          "rules": [{ "matches": "[text=\"确定\"]" }]
+          name: "自动确认退出朗读",
+          activityIds: ["com.iflytek.readassistant.biz.home.main.Home","com.iflytek.readassistant:id/news_dialog_btn_confirm"],
+          actionMaximum: 1,
+          actionDelay: 300,
+          desc: "自动退出朗读, 偷懒用, 日常可以关闭",
+          rules: [{ matches: '[text="确定"]' }],
         },
         {
-          "name": "拍照-自动确认照片",
-          "actionDelay": 300,
-          "activityIds": [
-            "com.iflytek.readassistant.biz.ocr.ui.camera.OCRPicModifyActivity"
+          name: "拍照-自动确认照片",
+          actionDelay: 300,
+          activityIds: [
+            "com.iflytek.readassistant.biz.ocr.ui.camera.OCRPicModifyActivity",
           ],
-          "rules": [{ "matches": "[vid=\"confirm_button\"]" }]
+          rules: [{ matches: '[vid="confirm_button"]' }],
         },
         {
-          "name": "拍照-自动加入收藏",
-          "actionDelay": 300,
-          "enable": false,
-          "desc": "自动加入收藏, 不要和自动点击一键收听同时开启",
-          "activityIds": [
-            "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity"
+          name: "拍照-自动加入收藏",
+          actionDelay: 300,
+          enable: false,
+          desc: "自动加入收藏, 不要和自动点击一键收听同时开启",
+          activityIds: [
+            "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity",
           ],
-          "rules": [{ "matches": "[text=\"加入收藏\"]" }]
+          rules: [{ matches: '[text="加入收藏"]' }],
         },
         {
-          "name": "拍照-自动点击一键收听",
-          "desc": "自动点击一键收听, 不要和自动加入收藏同时开启",
-          "actionDelay": 300,
-          "activityIds": [
-            "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity"
+          name: "拍照-自动点击一键收听",
+          desc: "自动点击一键收听, 不要和自动加入收藏同时开启",
+          actionDelay: 300,
+          activityIds: [
+            "com.iflytek.readassistant.biz.contentgenerate.ui.edit.ArticleEditActivity",
           ],
-          "rules": [{ "matches": "[text=\"一键收听\"]" }]
-        }
-      ]
+          rules: [{ matches: '[text="一键收听"]' }],
+        },
+      ],
     },
     {
-      "id": "com.microsoft.xboxone.smartglass",
-      "name": "XBOX",
-      "groups": [
+      id: "com.microsoft.xboxone.smartglass",
+      name: "XBOX",
+      groups: [
         {
-          "name": "自动点击远程游戏",
-          "desc": "自动点击远程游戏",
-          "actionDelay": 300,
-          "activityIds": ["com.microsoft.xbox.MainActivity"],
-          "rules": [
-            { "matches": "[text=\"在此设备上进行远程游戏\"]" },
-            { "matches": "[text=\"继续\"]" }
-          ]
-        }
-      ]
-    }
-  ]
+          name: "自动点击远程游戏",
+          desc: "自动点击远程游戏",
+          actionDelay: 300,
+          activityIds: ["com.microsoft.xbox.MainActivity"],
+          rules: [
+            { matches: '[text="在此设备上进行远程游戏"]' },
+            { matches: '[text="继续"]' },
+          ],
+        },
+      ],
+    },
+  ],
 }
