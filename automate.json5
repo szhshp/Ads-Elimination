@@ -40,7 +40,7 @@
           ],
         },
         {
-          name: "自动确认退出朗读",
+          name: "自动确认退出朗读(Legacy)",
           activityIds: [
             "com.iflytek.readassistant.biz.home.main.Home",
             "com.iflytek.readassistant:id/news_dialog_btn_confirm"
@@ -55,7 +55,7 @@
           ],
         },
         {
-          name: "自动确认退出朗读2",
+          name: "自动确认退出朗读",
           activityIds: [
             "com.iflytek.readassistant.biz.home.main.Home",
             "com.iflytek.readassistant:id/news_dialog_btn_confirm",
@@ -97,7 +97,7 @@
           ],
         },
         {
-          name: "拍照-自动点击一键收听",
+          name: "拍照-自动点击一键收听(Legacy)",
           desc: "自动点击一键收听, 不要和自动加入收藏同时开启",
           actionDelay: 300,
           activityIds: [
@@ -110,7 +110,7 @@
           ],
         },
         {
-          name: "拍照-自动点击一键收听2",
+          name: "拍照-自动点击一键收听",
           desc: "自动点击一键收听, 不要和自动加入收藏同时开启",
           actionDelay: 300,
           activityIds: [
@@ -129,8 +129,8 @@
       name: "XBOX",
       groups: [
         {
-          name: "自动点击远程游戏",
-          desc: "自动点击远程游戏",
+          name: "自动点击远程控制",
+          desc: "自动点击远程控制",
           actionDelay: 300,
           activityIds: [
             "com.microsoft.xbox.MainActivity"
